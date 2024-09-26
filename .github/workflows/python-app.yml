@@ -31,3 +31,7 @@ jobs:
     - name: Run pipeline example
       run: |
         python "Aula 16 Ferramentas e Extensões"/pipeline.py
+    - name: Download a single artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: exchange_sample.csv
