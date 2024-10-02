@@ -7,6 +7,8 @@ def get_finance_data_name(symbol):
     except:
         return f''
     
+# 98765-4321
+    
 def get_dividends_by_period(period, symbol):
     try: 
         return yf.Ticker(symbol).history(period=period).Dividends.sum() # 1d, 1w, 1m, 3m, 6m, 5y, 10y, ytd, max

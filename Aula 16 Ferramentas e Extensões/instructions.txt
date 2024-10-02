@@ -1,0 +1,7 @@
+python -m venv env/myenv
+Set-ExecutionPolicy Unrestricted -Scope Process
+.\env\env-1\Scripts\Activate.ps1
+deactivate
+
+docker build -t coderhouse '.\Aula 16 Ferramentas e Extensões\Dockerfile'
+docker run coderhouse
